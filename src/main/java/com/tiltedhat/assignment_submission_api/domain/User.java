@@ -15,18 +15,14 @@ public class User {
 	private Long id;
 	private LocalDate cohortStartDate;
 	private String username;
-	private String password;
-	private List<Assignment> assignments = new ArrayList<>();
+	private String password;	
 	
-	
-	
-	public User(Long id, LocalDate cohortStartDate, String username, String password, List<Assignment> assignments) {
+	public User(Long id, LocalDate cohortStartDate, String username, String password) {
 		super();
 		this.id = id;
 		this.cohortStartDate = cohortStartDate;
 		this.username = username;
 		this.password = password;
-		this.assignments = assignments;
 	}
 	
 	
@@ -59,12 +55,7 @@ public class User {
 	public void setPassword(String password) {
 		this.password = password;
 	}
-	public List<Assignment> getAssignments() {
-		return assignments;
-	}
-	public void setAssignments(List<Assignment> assignments) {
-		this.assignments = assignments;
-	}
+
 	
 	
 	
